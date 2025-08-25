@@ -8,6 +8,7 @@ const User = require('../models/User');
 // POST /api/auth/register
 router.post('/register', async (req, res) => {
     const { rollNo, password } = req.body;
+    print('rollNo')
     try {
         let user = await User.findOne({ rollNo });
         if (user) {

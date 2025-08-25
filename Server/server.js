@@ -29,10 +29,12 @@ connection.once('open', () => {
 // Import route files
 const authRoutes = require('./routes/auth');
 const courseRoutes = require('./routes/courses');
+const testRoutes = require('./routes/test');
 
 // Use routes
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
+app.use('/api/test', testRoutes); // <-- AND ADD THIS LINE
 
 // --- Start the server ---
 app.listen(PORT, () => {
