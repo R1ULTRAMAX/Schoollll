@@ -30,11 +30,13 @@ connection.once('open', () => {
 const authRoutes = require('./routes/auth');
 const courseRoutes = require('./routes/courses');
 const testRoutes = require('./routes/test');
+const teacherRoutes = require('./routes/teachers');
 
 // Use routes
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
-app.use('/api/test', testRoutes); // <-- AND ADD THIS LINE
+app.use('/api/test', testRoutes); 
+app.use('/api/teachers', teacherRoutes);
 
 // --- Start the server ---
 app.listen(PORT, () => {
