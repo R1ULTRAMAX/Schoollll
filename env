@@ -1,0 +1,9 @@
+# MongoDB Connection String
+# Replace <username>, <password>, and <dbname> with your actual credentials
+MONGO_URI=mongodb+srv://udaygusknp2022:ZwaChT9v5yeZFC1C@cluster0.jtisoxb.mongodb.net/School?retryWrites=true&w=majority
+
+# JWT Secret for token generation
+JWT_SECRET=VinayakGupta
+
+# Server Port
+PORT=5000
